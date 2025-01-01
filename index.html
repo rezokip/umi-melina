@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unsere Geschichte</title>
+    <title>Image Slideshow</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-    </header>
-    <main>
-        <section id="about">
-        
-        </section>
-        <section id="photos" class="gallery">
-            <h2>Fotogalerie</h2>
-            <img src="images/photo1.jpg" alt="Gemeinsames Foto 1">
-            <img src="images/photo2.jpg" alt="Gemeinsames Foto 2">
-        </section>
-    </main>
-    <footer>
-    </footer>
+    <div class="slideshow-container">
+        <div class="slide active">
+            <img src="images/photo1.jpg" alt="Bild 1">
+        </div>
+        <div class="slide">
+            <img src="images/photo2.jpg" alt="Bild 2">
+        </div>
+        <div class="slide">
+            <img src="images/photo3.jpg" alt="Bild 3">
+        </div>
+        <!-- Navigation Buttons -->
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
